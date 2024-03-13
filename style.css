@@ -9,6 +9,17 @@ html, body {
   width: 100%;
   height: 100%;
 }
+#cursor{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
 #loader {
   background-color: #0b0b0b;
   height: 100%;
@@ -104,12 +115,47 @@ html, body {
   height: 100vh;
   background-color: #151515;
 }
-#page1 {
-  background-color: transparent;
-}
 #page2 {
   background-color: aquamarine;
 }
 #page3 {
   background-color: blanchedalmond;
+}
+
+#page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 4vw;
+}
+#nav #nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vw;
+}
+#nav-part2 h4{
+  font-size: 1vw;
+  font-weight: 500;
+}
+.hero{
+  width: 72%;
+  margin-left: 27%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.hero:nth-child(2){
+  margin-top: 18vh;
+}
+.hero h1, .hero h2, .hero h3{
+  font-size: 7vw;
+  font-weight: 600;
+  line-height: 7.2vw;
+}
+.hero h2:hover{
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 500;
 }
