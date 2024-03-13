@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Plain Light";
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+#loader {
+  background-color: #0b0b0b;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  padding: 25vh 10vw;
+}
+.line {
+  overflow: hidden;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+#line1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+#line1-part1 h5,
+#line1-part1 h6 {
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "Silk Serif";
+}
+#line1-part1 h5 {
+  width: 5vw;
+  text-align: end;
+}
+.line h1 {
+  font-size: 6.5vw;
+  font-weight: 600;
+}
+.line h2 {
+  font-size: 6.5vw;
+  line-height: 0%;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes nowAnime {
+  0% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 900;
+    opacity: 1;
+    font-size: 6.5vw;
+  }
+  48% {
+    font-family: "Plain Light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 900;
+    opacity: 0;
+    font-size: 6.5vw;
+  }
+  49% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    opacity: 0;
+    font-size: 6.5vw;
+  }
+  50% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 1;
+    font-size: 6.5vw;
+  }
+  100% {
+    font-family: "Silk Serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 0;
+    font-size: 6.5vw;
+  }
+}
+#main {
+  position: relative;
+  background-color: #0b0b0b;
+}
+#page1,
+#page2,
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #151515;
+}
+#page1 {
+  background-color: transparent;
+}
+#page2 {
+  background-color: aquamarine;
+}
+#page3 {
+  background-color: blanchedalmond;
+}
