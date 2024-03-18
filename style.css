@@ -107,7 +107,7 @@ body {
 }
 #main {
   position: relative;
-  background-color: #0b0b0b;
+  background-color: #151515;
 }
 #page1,
 #page2,
@@ -123,6 +123,9 @@ body {
 }
 
 /* page1 */
+#page1 {
+  margin-bottom: 8vw;;
+}
 #page1 #nav {
   display: flex;
   align-items: center;
@@ -140,11 +143,11 @@ body {
   font-weight: 500;
 }
 .hero {
-  width: 72%;
-  margin-left: 28%;
+  width: 67vw;
+  margin-left: 27.5%;
   height: fit-content;
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
   align-items: center;
 }
 .hero:nth-child(2) {
@@ -156,6 +159,16 @@ body {
   font-size: 7vw;
   font-weight: 600;
   line-height: 7.2vw;
+  position: relative;
+}
+#hero1::before{
+  content: "01";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 400;
+  font-family: 'Silk Serif';
+  top: 35%;
+  left: 18%;
 }
 .hero h2,
 .hero h3 {
@@ -172,15 +185,6 @@ body {
   font-weight: 500;
   border-bottom-color: transparent;
 }
-/* #hero1 h1::before{
-  content: "01";
-  position: absolute;
-  font-size: 3vw;
-  font-weight: 400;
-  font-family: 'Silk Serif';
-  top: -15%;
-  left: -15%;
-} */
 
 /* page2 */
 #page2 {
@@ -329,7 +333,6 @@ body {
   font-weight: 400;
   display: inline-block;
   line-height: 100%;
-  /* background-color: wheat; */
   margin-right: 16px;
 }
 #page5 .elem h1,
@@ -368,7 +371,7 @@ body {
   position: relative;
   width: 67vw;
   margin-left: 27.5%;
-  padding: 6rem 0;
+  padding: 5vw 0;
 }
 #footer h1 {
   font-size: 7vw;

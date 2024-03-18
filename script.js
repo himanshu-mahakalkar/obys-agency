@@ -82,11 +82,16 @@ function loadingAnimation() {
   timeline.from("#nav",{
     opacity:0
   });
-
+  
   timeline.from("#hero1 h1,#hero2 h1,#hero3 h2,#hero3 h3,#hero4 h1",{
     y: 140,
     stagger:0.2
   });
+  
+  timeline.from("#hero1,#page2",{
+    opacity:0
+  },"-=1.5");
+
 };
 function cursorAnimation(){
   document.addEventListener("mousemove", function (details) {
